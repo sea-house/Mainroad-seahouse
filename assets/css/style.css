@@ -1,4 +1,4 @@
-{{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#fff") -}}
+{{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#666666") -}}
 
 {{- $fontSans := `"Open Sans", Helvetica, Arial, sans-serif` -}}
 {{- $fontMono := `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` -}}
@@ -1165,9 +1165,9 @@ textarea {
 	padding: 10px 25px;
 	font-size: 12px;
 	font-size: .75rem;
-	color: #999;
+	color: highlightColor;
 	background: #2a2a2a;
-	border-top: 3px solid #999;
+	border-top: 3px solid highlightColor;
 }
 
 .footer__container {
@@ -1175,6 +1175,7 @@ textarea {
 	flex-flow: row wrap;
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
+	color: #fff
 }
 
 .footer__links {
@@ -1224,6 +1225,7 @@ textarea {
 
 	.footer__copyright {
 		text-align: center;
+		color: #fff
 	}
 }
 
